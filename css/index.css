@@ -8,7 +8,7 @@ body {
 }
 
 .main {
-  position: absolute;
+  height: 100%;
   left: 0;
   top: 0;
   right: 20em;
@@ -19,7 +19,7 @@ body {
 .tools {
   box-sizing: border-box;
   padding: 0.25em 0.5em;
-  position: absolute;
+  position: relative;
   right: 0;
   top: 0;
   bottom: 0;

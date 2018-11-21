@@ -6,6 +6,7 @@ app.use(express.static(__dirname + '/js'));
 app.use(express.static(__dirname + '/fonts'));
 app.use(express.static(__dirname + '/datasets'));
 app.use(express.static(__dirname + '/stylesheets'));
+app.use(express.static(__dirname + '/img'));
 
 
 app.get('/',function(req,res){

@@ -1,17 +1,14 @@
 <!DOCTYPE html>
 
 <html>
-<system.webServer>
- <staticContent>
-   <remove fileExtension=".woff"/>
-   <mimeMap fileExtension=".woff" mimeType="application/x-font-woff" />
- </staticContent>
-</system.webServer>
 <head>
   <link rel="stylesheet" href="normalize.css" />
   <link rel="stylesheet" href="skeleton.css" />
   <link rel="stylesheet" href="index.css" />
   <link rel="stylesheet" href="tooltipster.bundle.min.css" />
+  <link rel="stylesheet" href="template.css"/>
+  <link rel="stylesheet" href="buttons.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
   <script src="cytoscape.min.js"></script>
   <script src="cola.js"></script>
@@ -24,10 +21,19 @@
 </head>
 
 <body>
-  <h1>Cytoscape.js tutorial demo</h1>
+  <section class="banner full">
+    <h2>Social Network Visualization</h2>
+     <ul>
+        <li><a href="https://www.facebook.com/ansontang216/"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+        <li><a href="https://www.github.com/ansontang216/"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+        <li><a href="https://www.linkedin.com/in/atang216/"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+        <li><a href="https://www.instagram.com/ansontang216/"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+      </ul>
+  </section>
+</body>
 
-  <div id="cy" class="main">
-  </div>
+   <div id="cy" class="main">
+   </div> 
 
   <div class="tools">
     <h2>Data</h2>
