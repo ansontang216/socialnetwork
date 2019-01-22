@@ -33,8 +33,8 @@
     let applyDataset = dataset => {
       // so new eles are offscreen
       cy.zoom(0.001);
+      cy.userZoomingEnabled(false);
       cy.pan({ x: -9999999, y: -9999999 });
-
       // replace eles
       //console.log(cy.elements);
       cy.elements().remove();
