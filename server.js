@@ -15,6 +15,11 @@ app.get('/',function(req,res){
 
 });
 
-app.listen(8080,function(){
-	console.log('ready at 8080');
-})
+// app.listen(8080,function(){
+// 	console.log('ready at 8080');
+// })
+
+const port = process.env.PORT || 8080;
+app.listen(port, () => {
+  console.log('Express server listening on port', port)
+});

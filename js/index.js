@@ -29,7 +29,7 @@
 
     //get data from json and use cy.add
     let $dataset = $('#data');
-    let getDataset = name => fetch('custom.json').then( toJson );
+    let getDataset = name => fetch('social.json').then( toJson );
     let applyDataset = dataset => {
       // so new eles are offscreen
       cy.zoom(0.001);
