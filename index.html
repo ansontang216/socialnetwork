@@ -50,15 +50,23 @@
       <option value="shoes.json" selected>Shoes</option>
     </select>
 
-    <h2>Style</h2>
+    <h2>Algorithms</h2>
 
-    <p>The styles determines how the nodes will look like. You can select from the styles I have provided.</p>
+    <p>Cytoscape.js has a variety of graph theory algorithms. You can select from the ones I have provided</p>
 
-    <label for="style" class="tooltip u-pull-left" title="Switch to a new graph stylesheet">Active stylesheet</label>
+    <label for="algorithm" class="tooltip u-pull-left" title="Run algorithm.">
+        Run algorithm
+      </label>
     <div class="u-cf"></div>
-    <select id="style">
-        <option value="fancy.json" selected>Fancy</option>
-      </select>
+
+    <select id="algorithm">
+      <option value="none" selected>None</option>
+      <option value="bfs">BFS</option>
+      <option value="dfs">DFS</option>
+      <option value="astar">A*</option>
+      <option value="custom">Custom</option>
+    </select>
+    <i id="redo-algorithm" class="fa fa-refresh action-icon tooltip" title="Redo algorithm visualization"></i>
 
     <h2>Layout</h2>
 
@@ -74,22 +82,18 @@
       </select>
     <i id="redo-layout" class="fa fa-refresh action-icon tooltip" title="Redo layout"></i>
 
-    <h2>Algorithms</h2>
 
-    <p>Cytoscape.js has a variety of graph theory algorithms. You can select from the ones I have provided</p>
 
-    <label for="algorithm" class="tooltip u-pull-left" title="Run algorithm.">
-        Run algorithm
-      </label>
+
+    <h2>Style</h2>
+
+    <p>The styles determines how the nodes will look like. You can select from the styles I have provided.</p>
+
+    <label for="style" class="tooltip u-pull-left" title="Switch to a new graph stylesheet">Active stylesheet</label>
     <div class="u-cf"></div>
-    <select id="algorithm">
-        <option value="none" selected>None</option>
-        <option value="bfs">BFS</option>
-        <option value="dfs">DFS</option>
-        <option value="astar">A*</option>
-        <option value="custom">Custom</option>
-      </select>
-    <i id="redo-algorithm" class="fa fa-refresh action-icon tooltip" title="Redo algorithm visualization"></i>
+    <select id="style">
+        <option value="fancy.json" selected>Fancy</option>
+    </select>
   </div>
 
 </body>
